@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="POST" autocomplete="off">
+    <form action="" method="POST" autocomplete="off">
     <h1>register here!!!</h1>
     <label for="t">username:</label> 
     <input type="text" placeholder="enter username" name="a" id="t" required><br><br>
@@ -24,6 +24,7 @@ if(isset($_POST['btn'])){
     $query=mysqli_query($conn,"insert into admin values('','$aa','$bb')");
     if($query){
         echo "<script>alert('hello there.!')</script>";
+        header("location:index.php");
     }
     else{
         echo "<script>alert('incorrect')</script>";

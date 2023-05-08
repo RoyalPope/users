@@ -28,7 +28,7 @@ while($row=mysqli_fetch_array($query)){
 $i++;
 }
 ?>
-</table>
-
+</table><br>    
+<a href="login.php"><button>Log in</button></a> <a href="signup.php"><button>Sign up</button></a>
 </body>
 </html>

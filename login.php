@@ -17,7 +17,7 @@
     <button type="submit" name="btn">log in</button>
 </form>
 <?php
-if(isset[$_POST['btn']]){
+if(isset ($_POST['btn'])){
     include"connect.php";
     $aa=$_POST['a'];
     $bb=$_POST['b'];
